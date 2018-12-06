@@ -64,11 +64,11 @@ public class MainActivity extends AppCompatActivity {
             while ((c = fin.read()) != -1) {
                 buffer.append((char) c);
             }
-            String message1 = "Good Day! " + "\n" + buffer;
+            String message1 = "Good Day! " + "\n" + eName.getText().toString();
             tMsgName.setText(message1);
-            String message2 = "Your age " + "\n" + buffer;
+            String message2 = "Your age " + "\n" + eAge.getText().toString();;
             tMsgAge.setText(message2);
-            String message3 = "Your Gender " + "\n" + buffer;
+            String message3 = "Your Gender " + "\n" + eGender.getText().toString();;
             tMsgGender.setText(message3);
         } catch (Exception e) {
             Toast.makeText(this, "Error reading...", Toast.LENGTH_LONG).show();
